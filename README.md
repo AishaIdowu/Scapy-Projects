@@ -12,7 +12,7 @@ This repository contains hands-on projects built with Scapy for network analysis
 
 
 
-## Projects
+## **Projects**
 1. [Packet Sniffer](Project1_PacketSniffer/README.md)
 
 
