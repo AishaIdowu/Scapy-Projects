@@ -1,4 +1,4 @@
-# **Custom Packet Crafting with Scapy**
+# Custom Packet Crafting with Scapy
 
 This project demonstrates how to craft and send custom network packets using the Scapy library in Python. The script creates a packet with the following layers:
 
@@ -8,21 +8,21 @@ This project demonstrates how to craft and send custom network packets using the
 - Raw payload (Layer 7)
 It also provides the ability to save the crafted packet to a .pcap file for further analysis in tools like Wireshark.
 
-## **Prerequisites**
+## Prerequisites
 Before running this script, ensure you have the following:
 
-### **System Requirements**
+### System Requirements
 - Python 3.7+
 - Linux or macOS (preferred for raw socket support)
 - Root or Administrator privileges (required for sending raw packets)
 - Wireshark (Optional)
 
-### **Python Libraries**
+### Python Libraries
 - Install the Scapy library:
 ````
 pip install scapy
 ````
-## **How It Works**
+## How It Works
 The script performs the following steps:
 
 1. **Create an IP Layer:**
@@ -52,18 +52,18 @@ The script performs the following steps:
 
 ## **How to Run**
 
-1. **Execute the Script**
+1. Execute the Script
 Run the script with root privileges to send raw packets:
 ````
 sudo python3 custom_packet.py
 ````
-2. **Analyze the Packet**
+2. Analyze the Packet
 Open the .pcap File in Wireshark:
-1. Launch Wireshark.
-2. Open the saved file (custom_packet.pcap).
-3. Inspect the packet layers and payload.
+   1. Launch Wireshark.
+   2. Open the saved file (custom_packet.pcap).
+   3. Inspect the packet layers and payload.
 
-3. **Expected Packet Structure:**
+3. Expected Packet Structure:
 - Ethernet: Displays the MAC addresses (source/destination).
 - IP: Displays source and destination IP addresses.
 - TCP: Displays source/destination ports and the SYN flag.
